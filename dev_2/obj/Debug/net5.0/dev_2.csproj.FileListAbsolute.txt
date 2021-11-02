@@ -1,0 +1,16 @@
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2.deps.json
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2.runtimeconfig.json
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2.runtimeconfig.dev.json
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2.dll
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/ref/dev_2.dll
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/bin/Debug/net5.0/dev_2.pdb
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.csproj.AssemblyReference.cache
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.AssemblyInfoInputs.cache
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.AssemblyInfo.cs
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.csproj.CoreCompileInputs.cache
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.dll
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/ref/dev_2.dll
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.pdb
+/home/alexhvorostov/GeekBrains Курсы/Курс №5. Языки прграммирования/Seminar_1_HW/dev_2/obj/Debug/net5.0/dev_2.genruntimeconfig.cache

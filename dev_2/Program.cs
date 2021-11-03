@@ -7,69 +7,83 @@
     //элементы, больше 8
     //знакочередования
 
+// Создаем метод заполнения массива
 
-void FillTheArray(int[] numbers)  // Создаем метод (функцию)
+int[] arrayA = new int[10];
+int minValue = new Random().Next(-90, 10);
+int maxValue = new Random().Next(10, 90);
+int index = 0;
+
+for(int j = 0; j < 10; ++j)
 {
-    int length = numbers.Length;   // находим длинну массива
+    Random rnd;
+    rnd=new Random();
+    arrayA[j] = new Random().Next(minValue,maxValue);
+}
+
+for(index = 0; index < 10; ++index)
+{
+    Console.Write(arrayA[index]+" ");
+}
+
+
+int[] CreateArrayB(int[] arrayB)  //Создание массива B на основе массива А
+{
+    int len = (arrayA.Length)-1;
     int index = 0;
-    int minValue = -10;
-    int maxValue = 20;
-
-    while(index < length)
+    int index2 = 0;
+    int currentElement = 0;
+    while (index <= len) 
     {
-        numbers[index] = new Random().Next(minValue, maxValue);  // Кладем новое случ. число из диапазона
-        index++;
+    if(arrayA[index]>currentElement)
+    {
+        currentElement = arrayA[index];
+        arrayB[index2] = currentElement;
+        index2++;
     }
+     index++;
+    }
+    return arrayB;
+    arrayB = CreateArrayB(arrayB); 
 }
 
-void PrintArray(int[] num)
+
+
+
+
+//создаём массив А
+/*int[] arrayA = new int[10];
+int minValue = new Random().Next(-90,10);
+int maxValue = new Random().Next(10,90);
+int i = 0;
+
+for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
 {
-    int count = num.Length;
-    int currentIndex = 0;   // текущий индекс позиции
-    while(currentIndex < count)
-    {
-        Console.WriteLine(num[currentIndex]);
-        currentIndex++;
-    }
+    Random rnd;
+    rnd=new Random();
+    arrayA[j] = new Random().Next(minValue,maxValue);
+} 
+for(i=0;i<10;++i) // вывод на консоль чисел
+  {
+    Console.Write(arrayA[i]+" ");
+  }
 
+int[] createArrayB(int[] arrayB)//Создание массива B на основе массива А
+{
+int len = (arrayA.Length)-1;
+int index = 0;
+int index2 = 0;
+int currentElement = 0;
+while (index <= len)
+ {
+  if(arrayA[index]>currentElement)
+  {
+  currentElement = arrayA[index];
+  arrayB[index2] = currentElement;
+  index2++;
+  }
+  index++;
+ }
+ return arrayB;
 }
-
-
-
-int[] arrayA = new int[10]; // Создали массив
-FillTheArray(arrayA); // Вызов метода заполнения массива
-PrintArray(arrayA);  // вызов метода печати массива
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//int[] arrayA = new int[10];  // 1. Создаем новый массив из 10 элементов
-
-
-/*int[] CreateArray = new int[10];
-
-
-int minValue = -10;
-int maxValue = 20;
-//int index = 0;
-
-int arrayA = new Random().Next(minValue, maxValue);
-
-
-
-Console.WriteLine(arrayA);*/
-
-
+int[] arrayB =*/

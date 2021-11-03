@@ -9,53 +9,28 @@
 
 // Создаем метод заполнения массива
 
-int[] arrayA = new int[10];
-int minValue = new Random().Next(-90, 10);
+int minValue = new Random().Next(-90, -10);
 int maxValue = new Random().Next(10, 90);
-int index = 0;
 
-for(int j = 0; j < 10; ++j)
+Console.WriteLine(minValue);
+Console.WriteLine(maxValue);
+int[] arrayA = new int[10];
+int[] arrayB = new int[10];
+
+void PrintArray(int[] col)
 {
-    Random rnd;
-    rnd=new Random();
-    arrayA[j] = new Random().Next(minValue,maxValue);
-}
-
-for(index = 0; index < 10; ++index)
-{
-    Console.Write(arrayA[index]+" ");
-}
-
-
-int[] CreateArrayB(int[] arrayB)  //Создание массива B на основе массива А
-{
-    int len = (arrayA.Length)-1;
-    int index = 0;
-    int index2 = 0;
-    int currentElement = 0;
-    while (index <= len) 
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
     {
-    if(arrayA[index]>currentElement)
-    {
-        currentElement = arrayA[index];
-        arrayB[index2] = currentElement;
-        index2++;
-    }
-     index++;
-    }
-    return arrayB;
-    arrayB = CreateArrayB(arrayB); 
+            if(col[position]!=0)
+        {
+            Console.Write(col[position] +" ");
+        }
+            position++;
+    }  
 }
 
-
-
-
-
-//создаём массив А
-/*int[] arrayA = new int[10];
-int minValue = new Random().Next(-90,10);
-int maxValue = new Random().Next(10,90);
-int i = 0;
 
 for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
 {
@@ -63,27 +38,28 @@ for(int j=0; j<10; ++j)   // Заполнение массива случайн�
     rnd=new Random();
     arrayA[j] = new Random().Next(minValue,maxValue);
 } 
-for(i=0;i<10;++i) // вывод на консоль чисел
-  {
-    Console.Write(arrayA[i]+" ");
-  }
 
-int[] createArrayB(int[] arrayB)//Создание массива B на основе массива А
+PrintArray(arrayA);
+Console.WriteLine();
+
+int[] createArrayB(int[] arrayB) //Создание массива B на основе массива А с отбрасыванием чисел, нарушающих порядок возрастания
 {
-int len = (arrayA.Length)-1;
-int index = 0;
-int index2 = 0;
-int currentElement = 0;
-while (index <= len)
- {
-  if(arrayA[index]>currentElement)
-  {
-  currentElement = arrayA[index];
-  arrayB[index2] = currentElement;
-  index2++;
-  }
-  index++;
- }
- return arrayB;
+    int len = (arrayA.Length)-1;
+    int index = 0;
+    int index2 = 0;
+    int currentElement = -90;
+    while (index <= len)
+    {
+        if(arrayA[index] > currentElement)
+            {
+                currentElement = arrayA[index];
+                arrayB[index2] = currentElement;
+                index2++;
+            }
+        index++;
+    }
+    return arrayB;
 }
-int[] arrayB =*/
+
+arrayB = createArrayB(arrayB);
+PrintArray(arrayB);

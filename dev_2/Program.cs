@@ -9,15 +9,28 @@
 
 // Создаем метод заполнения массива
 
-int minValue = new Random().Next(-50, -10);
-int maxValue = new Random().Next(10, 50);
+int minValue = new Random().Next(-10, 40);  // создаем min
+int maxValue = new Random().Next(10, 40);   // создаем max
 
 Console.WriteLine(minValue);
 Console.WriteLine(maxValue);
-int[] arrayA = new int[10];
-int[] arrayB = new int[10];
 
-void PrintArray(int[] col)
+int[] arrayA = new int[40];     // создаем массив А 
+int[] arrayB = new int[40];     // создаем массив В
+
+
+for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
+{
+    Random rnd;
+    rnd=new Random();
+    arrayA[j] = new Random().Next(minValue,maxValue);
+} 
+
+PrintArray(arrayA);
+Console.WriteLine();
+
+
+void PrintArray(int[] col)      // метод написания массива
 {
     int count = col.Length;
     int position = 0;
@@ -32,7 +45,7 @@ void PrintArray(int[] col)
 }
 
 
-for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
+/*for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
 {
     Random rnd;
     rnd=new Random();
@@ -40,7 +53,8 @@ for(int j=0; j<10; ++j)   // Заполнение массива случайн�
 } 
 
 PrintArray(arrayA);
-Console.WriteLine();
+Console.WriteLine();*/
+
 
 int[] createArrayB(int[] arrayB) //Создание массива B на основе массива А с отбрасыванием чисел, нарушающих порядок возрастания
 {

@@ -64,8 +64,30 @@ PrintArray(arrayB);
 Console.WriteLine();
 
 
-int[] createArrayC(int[] arrayC)     //Создание массива C на основе массива B (откидываем числа больше 8)
+/*int[] createArrayC(int[] arrayC);     //Создание массива C на основе массива B (откидываем числа больше 8)
+
+
+void PrintArray(int[] col)      // метод вывода массива
 {
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
+    {
+            if(col[position]!=0)
+        {
+            Console.Write(col[position] + " ");
+        }
+            position++;
+    }  
+}
+Console.WriteLine("Массив: ");
+PrintArray(arrayA);       // вызов метода
+Console.WriteLine();
+
+
+
+
+/*{
     int len = (arrayB.Length)-1;
     int index = 0;
     int index3 = 0;
@@ -84,6 +106,7 @@ int[] createArrayC(int[] arrayC)     //Создание массива C на о
     return arrayC;
 }
 
-Console.WriteLine("Числа нарушающие порядок: ");
-createArrayC(arrayC);
- 
+Console.WriteLine("Элементы больше 8: ");
+arrayC = createArrayC(arrayC);
+PrintArray(arrayC);*/
+

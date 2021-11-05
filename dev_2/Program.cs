@@ -9,8 +9,8 @@
 
 // Создаем метод заполнения массива
 
-int minValue = new Random().Next(-90, -10);
-int maxValue = new Random().Next(10, 90);
+int minValue = new Random().Next(-50, -10);
+int maxValue = new Random().Next(10, 50);
 
 Console.WriteLine(minValue);
 Console.WriteLine(maxValue);
